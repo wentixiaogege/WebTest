@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2015 2:49:25 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.itu.bean.SmartMeter" table="smart_meter" catalog="emsdb22_20150330">
+        <id name="smId" type="int">
+            <column name="sm_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="smName" type="string">
+            <column name="sm_name" length="45" />
+        </property>
+        <property name="smIeeeAddress" type="binary">
+            <column name="sm_ieeeAddress" />
+        </property>
+        <property name="coordinatorId" type="java.lang.Integer">
+            <column name="coordinator_id" />
+        </property>
+        <property name="validation" type="string">
+            <column name="validation" length="2" />
+        </property>
+        <property name="smStatus" type="binary">
+            <column name="sm_status" />
+        </property>
+    </class>
+</hibernate-mapping>

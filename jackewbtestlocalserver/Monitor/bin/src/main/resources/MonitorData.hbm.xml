@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2015 11:21:51 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="bean.MonitorData" table="monitor_data" catalog="emsdb22_20150330">
+        <id name="monitorDataId" type="java.lang.Integer">
+            <column name="monitor_data_id" />
+            <generator class="identity" />
+        </id>
+        <timestamp name="timestamp" column="timestamp" />
+        <property name="smLoadConfigId" type="java.lang.Integer">
+            <column name="sm_load_config_id" />
+        </property>
+        <property name="paramName" type="string">
+            <column name="param_name" length="45" />
+        </property>
+        <property name="paramMax" type="java.lang.Float">
+            <column name="param_max" precision="12" scale="0" />
+        </property>
+        <property name="paramMin" type="java.lang.Float">
+            <column name="param_min" precision="12" scale="0" />
+        </property>
+        <property name="processed" type="java.lang.Integer">
+            <column name="processed" />
+        </property>
+    </class>
+</hibernate-mapping>

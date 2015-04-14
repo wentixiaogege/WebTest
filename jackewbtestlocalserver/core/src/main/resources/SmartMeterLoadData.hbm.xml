@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2015 2:49:25 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.itu.bean.SmartMeterLoadData" table="smart_meter_load_data" catalog="emsdb22_20150330">
+        <id name="smLoadDataId" type="java.lang.Integer">
+            <column name="sm_load_data_id" />
+            <generator class="identity" />
+        </id>
+        <timestamp name="timestamp" column="timestamp" />
+        <property name="smLoadConfigId" type="java.lang.Integer">
+            <column name="sm_load_config_id" />
+        </property>
+        <property name="paramValue1" type="java.lang.Float">
+            <column name="param_value1" precision="12" scale="0" />
+        </property>
+        <property name="paramValue2" type="java.lang.Float">
+            <column name="param_value2" precision="12" scale="0" />
+        </property>
+        <property name="paramValue3" type="java.lang.Float">
+            <column name="param_value3" precision="12" scale="0" />
+        </property>
+        <property name="processed" type="java.lang.Integer">
+            <column name="processed" />
+        </property>
+        <property name="loadStatus" type="java.lang.Integer">
+            <column name="load_status" />
+        </property>
+    </class>
+</hibernate-mapping>

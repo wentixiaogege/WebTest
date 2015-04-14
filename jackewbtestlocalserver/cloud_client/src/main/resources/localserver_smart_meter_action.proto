@@ -1,0 +1,18 @@
+package edu.itu;
+
+import "src/main/resources/localserver_smart_meter_data_record.proto";
+import "src/main/resources/common_enum.proto";
+
+option java_package = "com.itu.action";
+option java_outer_classname = "LocalServerSmartMeterDataActionProtos";
+
+message LocalServerSmartMeterDataAction {
+	repeated int32 ids = 1;
+	repeated string sm_ieee_address = 2;
+	optional int64 start_time = 3;
+	optional int64 end_time = 4;
+	optional OpterationType operation = 5;
+	repeated LocalServerSmartMeterDataRecord records = 6;
+	optional string status = 7;
+	optional string err_msg = 8;
+}

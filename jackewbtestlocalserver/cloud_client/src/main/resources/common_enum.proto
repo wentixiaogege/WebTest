@@ -1,0 +1,15 @@
+package edu.itu;
+option java_package = "com.itu.action";
+option java_outer_classname = "CommonEnum";
+
+enum OpterationType {
+    ADD = 1;
+    MODIFY = 2;
+    DELETE = 3;
+    SEARCH = 4;
+}
+
+enum ResultType {
+    TRUE = 1;
+    FALSE = 2;
+}

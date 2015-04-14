@@ -1,0 +1,36 @@
+option java_package = "com.itu.action";
+option java_outer_classname = "SmartMeterDataRecordProtos";
+
+message SmartMeterDataRecord {
+
+  optional int32 id = 1;
+  optional int32 sm_index = 2;
+  optional string sm_ieeeAddress = 3;
+  optional int32 timestamp = 4;
+  optional int32 rms_V1 = 5;
+  optional float rms_I1 = 6;
+  optional int32 rms_V2 = 7;
+  optional float rms_I2 = 8;
+  optional int32 rms_V3 = 9;
+  optional float rms_I3 = 10;
+  optional float power = 11;
+  optional float accumulated_energy = 12;
+  optional int32 status = 13;
+
+  optional int32 theta_1 = 17;
+  optional int32 mag_V1 = 18;
+  optional int32 mag_I1 = 19;
+
+  optional int32 theta_2 = 20;
+  optional int32 mag_V2 = 21;
+  optional int32 mag_I2 = 22;
+
+  optional int32 theta_3 = 23;
+  optional int32 mag_V3 = 24;
+  optional int32 mag_I3 = 25;
+
+  optional int32 sm_V = 26;
+  optional int32 sm_I = 27;
+
+}
+

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2015 2:49:25 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.itu.bean.DataRegisterData" table="data_register_data" catalog="emsdb22_20150330">
+        <id name="dataRegisterDataId" type="java.lang.Integer">
+            <column name="data_register_data_id" />
+            <generator class="identity" />
+        </id>
+        <timestamp name="timestamp" column="timestamp" />
+        <property name="smId" type="java.lang.Integer">
+            <column name="sm_id" />
+        </property>
+        <property name="dataRegisterDataValue" type="binary">
+            <column name="data_register_data_value" />
+        </property>
+        <property name="processed" type="string">
+            <column name="processed" length="2" />
+        </property>
+    </class>
+</hibernate-mapping>
