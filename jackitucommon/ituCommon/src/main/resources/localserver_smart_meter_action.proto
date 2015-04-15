@@ -14,9 +14,9 @@ import "src/main/resources/localserver_smartmeterloaddata.proto";
 import "src/main/resources/common_enum.proto";
 
 option java_package = "edu.itu.proto";
-option java_outer_classname = "LocalServerSmartMeterDataActionProtos";
+option java_outer_classname = "LocalServerSmartMeterActionProtos";
 
-message LocalServerSmartMeterDataAction {
+message LocalServerSmartMeterAction {
 	
 	optional OpterationType operation = 1;
 	repeated LocalServerCommandLog command_log_records = 2;
