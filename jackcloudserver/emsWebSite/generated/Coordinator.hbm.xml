@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 8, 2015 4:51:38 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Coordinator" table="coordinator" catalog="emsdb">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="ieeeAddress" type="string">
+            <column name="ieee_address" length="45" />
+        </property>
+        <property name="serialNumber" type="string">
+            <column name="serial_number" length="45" />
+        </property>
+        <property name="validation" type="java.lang.Integer">
+            <column name="validation" />
+        </property>
+    </class>
+</hibernate-mapping>

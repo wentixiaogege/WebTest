@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="SmartMeterChannelConfig" table="smart_meter_channel_config" catalog="dataServer20150323">
+        <id name="smChannelId" type="java.lang.Integer">
+            <column name="sm_channel_id" />
+            <generator class="identity" />
+        </id>
+        <timestamp name="timestamp" column="timestamp" />
+        <property name="smId" type="java.lang.Integer">
+            <column name="sm_id" />
+        </property>
+        <property name="smConfigCode" type="binary">
+            <column name="sm_config_code" />
+        </property>
+        <property name="channel0Name" type="string">
+            <column name="channel_0_name" length="45" />
+        </property>
+        <property name="channel1Name" type="string">
+            <column name="channel_1_name" length="45" />
+        </property>
+        <property name="channel2Name" type="string">
+            <column name="channel_2_name" length="45" />
+        </property>
+        <property name="channel3Name" type="string">
+            <column name="channel_3_name" length="45" />
+        </property>
+        <property name="channel4Name" type="string">
+            <column name="channel_4_name" length="45" />
+        </property>
+        <property name="channel5Name" type="string">
+            <column name="channel_5_name" length="45" />
+        </property>
+        <property name="channel6Name" type="string">
+            <column name="channel_6_name" length="45" />
+        </property>
+        <property name="channel7Name" type="string">
+            <column name="channel_7_name" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

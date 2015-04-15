@@ -1,0 +1,8 @@
+package edu.itu;
+import "src/main/resources/common_enum.proto";
+option java_package = "edu.itu.proto";
+option java_outer_classname = "ResultsProtos";
+message Result {
+	optional ResultType res = 1;
+	optional string err_msg = 2;
+}

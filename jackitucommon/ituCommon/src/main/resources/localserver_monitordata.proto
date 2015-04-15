@@ -1,0 +1,13 @@
+package edu.itu;
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerMonitorDataProtos";
+
+message LocalServerMonitorData {
+	optional int32 monitor_data_id = 1;
+	optional int32 sm_load_config_id = 2;
+	optional float param_max = 3;
+	optional float param_min = 4;
+	optional int64 timestamp = 5;
+	optional int32 processed = 6;
+}

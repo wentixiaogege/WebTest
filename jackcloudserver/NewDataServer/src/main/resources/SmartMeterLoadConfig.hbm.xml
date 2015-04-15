@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.it.bean.Command.SmartMeterLoadConfig" table="smart_meter_load_config" catalog="dataServer20150323">
+        <id name="smLoadId" type="int">
+            <column name="sm_load_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="smId" type="java.lang.Integer">
+            <column name="sm_id" />
+        </property>
+        <property name="smLoadName" type="string">
+            <column name="sm_load_name" length="45" />
+        </property>
+        <property name="voltageName" type="string">
+            <column name="voltage_name" length="45" />
+        </property>
+        <property name="currentName" type="string">
+            <column name="current_name" length="45" />
+        </property>
+        <property name="thetaName" type="string">
+            <column name="theta_name" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

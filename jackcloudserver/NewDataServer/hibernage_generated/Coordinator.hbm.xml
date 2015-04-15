@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Coordinator" table="coordinator" catalog="dataServer20150323">
+        <id name="coordinatorId" type="int">
+            <column name="coordinator_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="localServerId" type="int">
+            <column name="local_server_id" not-null="true" />
+        </property>
+        <property name="coordinatorName" type="string">
+            <column name="coordinator_name" length="45" />
+        </property>
+        <property name="coordinatorIeeeAddress" type="binary">
+            <column name="coordinator_ieeeAddress" />
+        </property>
+        <property name="validation" type="string">
+            <column name="validation" length="2" />
+        </property>
+    </class>
+</hibernate-mapping>

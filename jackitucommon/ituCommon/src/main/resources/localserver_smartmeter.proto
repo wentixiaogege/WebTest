@@ -1,0 +1,13 @@
+package edu.itu;
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerSmartMeterProtos";
+
+message LocalServerSmartMeter {
+	optional int32 sm_id = 1;
+	optional string sm_name = 2;
+	optional int64 sm_ieeeAddress = 3;
+	optional int32 coordinator_id = 4;
+	optional int32 validation = 5;
+	optional bytes sm_status = 6;
+}

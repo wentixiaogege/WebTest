@@ -1,0 +1,17 @@
+option java_package = "edu.itu.proto";
+option java_outer_classname = "CloudCommandProtos";
+message CloudCommand {
+	required int32 id = 1;//
+	optional int32 timestamp = 2;
+	optional string name = 3;
+	optional int32 dataLength = 4;
+	optional int32 checked = 5;
+	optional int32 coordinatorId = 6;//
+	optional int32 smartmeterId = 7; //
+	optional int32 param1 = 8;      //
+}
+
+message CloudCommands {
+	repeated CloudCommand cloudcommands = 1;
+}
+

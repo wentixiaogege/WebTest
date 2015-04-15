@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="LocalServer" table="local_server" catalog="dataServer20150323">
+        <id name="localServerId" type="int">
+            <column name="local_server_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="localServerName" type="string">
+            <column name="local_server_name" length="45" />
+        </property>
+        <property name="localServerIeeeAddress" type="binary">
+            <column name="local_server_ieeeAddress" />
+        </property>
+        <property name="validation" type="string">
+            <column name="validation" length="2" />
+        </property>
+    </class>
+</hibernate-mapping>

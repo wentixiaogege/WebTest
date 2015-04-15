@@ -1,0 +1,12 @@
+package edu.itu;
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerCoordinatorProtos";
+
+message LocalServerCoordinator {
+	optional int32 coordinator_id = 1;
+	optional int32 local_server_id = 2;
+	optional string coordinator_name = 3;
+	optional string coordinator_ieeeAddress = 4;
+	optional string validation = 5;
+}

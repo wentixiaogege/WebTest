@@ -1,0 +1,12 @@
+package edu.itu;
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerCommandProtos";
+
+message LocalServerCommand {
+	optional int32 command_id = 1;
+	optional string name = 2;
+	optional int32 data_length = 3;
+	optional string param_name1 = 4;
+	optional string param_name2 = 5;
+}

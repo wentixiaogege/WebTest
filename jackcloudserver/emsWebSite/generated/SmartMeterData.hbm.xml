@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 8, 2015 4:51:38 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="SmartMeterData" table="smart_meter_data" catalog="emsdb">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="smIndex" type="java.lang.Integer">
+            <column name="sm_index" />
+        </property>
+        <property name="smIeeeAddress" type="string">
+            <column name="sm_IEEE_address" length="45" />
+        </property>
+        <property name="rmsV1" type="java.lang.Integer">
+            <column name="rms_V1" />
+        </property>
+        <property name="rmsI1" type="big_decimal">
+            <column name="rms_I1" precision="18" />
+        </property>
+        <property name="theta1" type="java.lang.Integer">
+            <column name="theta_1" />
+        </property>
+        <property name="rmsV2" type="java.lang.Integer">
+            <column name="rms_V2" />
+        </property>
+        <property name="rmsI2" type="big_decimal">
+            <column name="rms_I2" precision="18" />
+        </property>
+        <property name="theta2" type="java.lang.Integer">
+            <column name="theta_2" />
+        </property>
+        <property name="rmsV3" type="java.lang.Integer">
+            <column name="rms_V3" />
+        </property>
+        <property name="rmsI3" type="big_decimal">
+            <column name="rms_I3" precision="18" />
+        </property>
+        <property name="theta3" type="java.lang.Integer">
+            <column name="theta_3" />
+        </property>
+        <property name="magV1" type="java.lang.Integer">
+            <column name="mag_V1" />
+        </property>
+        <property name="magI1" type="java.lang.Integer">
+            <column name="mag_I1" />
+        </property>
+        <property name="magV2" type="java.lang.Integer">
+            <column name="mag_V2" />
+        </property>
+        <property name="magI2" type="java.lang.Integer">
+            <column name="mag_I2" />
+        </property>
+        <property name="magV3" type="java.lang.Integer">
+            <column name="mag_V3" />
+        </property>
+        <property name="magI3" type="java.lang.Integer">
+            <column name="mag_I3" />
+        </property>
+        <property name="smV" type="java.lang.Integer">
+            <column name="sm_V" />
+        </property>
+        <property name="smI" type="big_decimal">
+            <column name="sm_I" precision="18" />
+        </property>
+        <property name="power" type="big_decimal">
+            <column name="power" precision="18" />
+        </property>
+        <property name="energy" type="big_decimal">
+            <column name="energy" precision="18" />
+        </property>
+        <property name="accumulatedEnergy" type="big_decimal">
+            <column name="accumulated_energy" precision="18" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="status" />
+        </property>
+        <property name="timestamp" type="timestamp">
+            <column name="timestamp" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

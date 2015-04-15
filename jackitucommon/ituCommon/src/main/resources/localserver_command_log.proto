@@ -1,0 +1,19 @@
+package edu.itu;
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerCommandLogProtos";
+
+message LocalServerCommandLog {
+	optional int32 id = 1;
+	optional int32 command_id = 2;
+	optional bytes command_stream = 3;
+	optional bytes command_result = 4;
+	optional bytes command_data = 5;
+	optional bytes command_status = 6;
+	optional string generated_by = 7;
+	optional int64  generated_time = 8;
+	optional int64  executed_time = 9;
+	optional int64  lsdb_inserted_time = 10;
+	 
+	
+}

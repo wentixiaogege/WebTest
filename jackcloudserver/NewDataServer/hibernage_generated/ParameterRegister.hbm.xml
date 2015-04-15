@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ParameterRegister" table="parameter_register" catalog="dataServer20150323">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="coordinatorId" type="java.lang.Integer">
+            <column name="coordinator_id" />
+        </property>
+        <property name="minAdc" type="java.lang.Integer">
+            <column name="min_adc" />
+        </property>
+        <property name="maxAdc" type="java.lang.Integer">
+            <column name="max_adc" />
+        </property>
+        <property name="sampleInt" type="java.lang.Integer">
+            <column name="sample_int" />
+        </property>
+        <property name="sampleWin" type="java.lang.Integer">
+            <column name="sample_win" />
+        </property>
+        <property name="magV1" type="java.lang.Integer">
+            <column name="mag_v1" />
+        </property>
+        <property name="magI1" type="java.lang.Integer">
+            <column name="mag_i1" />
+        </property>
+        <property name="magV2" type="java.lang.Integer">
+            <column name="mag_v2" />
+        </property>
+        <property name="magI2" type="java.lang.Integer">
+            <column name="mag_i2" />
+        </property>
+        <property name="magV3" type="java.lang.Integer">
+            <column name="mag_v3" />
+        </property>
+        <property name="magI3" type="java.lang.Integer">
+            <column name="mag_i3" />
+        </property>
+        <property name="minV" type="java.lang.Integer">
+            <column name="min_v" />
+        </property>
+        <property name="maxV" type="java.lang.Integer">
+            <column name="max_v" />
+        </property>
+        <property name="minI" type="java.lang.Integer">
+            <column name="min_i" />
+        </property>
+        <property name="maxI" type="java.lang.Integer">
+            <column name="max_i" />
+        </property>
+        <property name="TEff" type="java.lang.Integer">
+            <column name="t_eff" />
+        </property>
+        <property name="sharp" type="java.lang.Integer">
+            <column name="sharp" />
+        </property>
+        <property name="peak" type="java.lang.Integer">
+            <column name="peak" />
+        </property>
+        <property name="shoulder" type="java.lang.Integer">
+            <column name="shoulder" />
+        </property>
+        <property name="off" type="java.lang.Integer">
+            <column name="off" />
+        </property>
+        <property name="NSm" type="java.lang.Integer">
+            <column name="n_sm" />
+        </property>
+    </class>
+</hibernate-mapping>

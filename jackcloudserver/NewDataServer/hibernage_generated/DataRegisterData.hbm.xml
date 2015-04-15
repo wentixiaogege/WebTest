@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="DataRegisterData" table="data_register_data" catalog="dataServer20150323">
+        <id name="dataRegisterRecordId" type="java.lang.Integer">
+            <column name="data_register_record_id" />
+            <generator class="identity" />
+        </id>
+        <property name="smId" type="int">
+            <column name="sm_id" not-null="true" />
+        </property>
+        <property name="dataRegisterRecordValue" type="binary">
+            <column name="data_register_record_value" />
+        </property>
+        <property name="localTimestamp" type="timestamp">
+            <column name="local_timestamp" length="19" />
+        </property>
+        <property name="serverTimestamp" type="timestamp">
+            <column name="server_timestamp" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

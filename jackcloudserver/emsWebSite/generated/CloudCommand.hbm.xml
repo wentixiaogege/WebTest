@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 8, 2015 4:51:38 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="CloudCommand" table="cloud_command" catalog="emsdb">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" />
+        </property>
+        <property name="dataLength" type="java.lang.Integer">
+            <column name="data_length" />
+        </property>
+        <property name="checked" type="java.lang.Integer">
+            <column name="checked" />
+        </property>
+        <property name="timestamp" type="timestamp">
+            <column name="timestamp" length="19" />
+        </property>
+        <property name="coordinatorId" type="java.lang.Integer">
+            <column name="coordinator_id" />
+        </property>
+        <property name="smartmeterId" type="java.lang.Integer">
+            <column name="smartmeter_id" />
+        </property>
+        <property name="param1" type="java.lang.Integer">
+            <column name="param1" />
+        </property>
+        <property name="commandId" type="java.lang.Integer">
+            <column name="command_id" />
+        </property>
+    </class>
+</hibernate-mapping>

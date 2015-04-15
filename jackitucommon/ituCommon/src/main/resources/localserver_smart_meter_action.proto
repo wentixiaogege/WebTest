@@ -1,0 +1,34 @@
+package edu.itu;
+
+import "src/main/resources/localserver_command_log.proto";
+import "src/main/resources/localserver_command.proto";
+import "src/main/resources/localserver_coordinator.proto";
+import "src/main/resources/localserver_dataregisterdata.proto";
+import "src/main/resources/localserver_localserver.proto";
+import "src/main/resources/localserver_monitordata.proto";
+import "src/main/resources/localserver_smartmeter.proto";
+import "src/main/resources/localserver_smartmeterchannelconfig.proto";
+import "src/main/resources/localserver_smartmeterloadconfig.proto";
+import "src/main/resources/localserver_smartmeterloaddata.proto";
+
+import "src/main/resources/common_enum.proto";
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerSmartMeterDataActionProtos";
+
+message LocalServerSmartMeterDataAction {
+	
+	optional OpterationType operation = 1;
+	repeated LocalServerCommandLog command_log_records = 2;
+	repeated LocalServerCommand command_records = 3;
+	repeated LocalServerCoordinator coordinator_records = 4;
+	repeated LocalServerDataRegisterData data_register_records = 5;
+	repeated LocalServerLocalServer localserver_records = 6;
+	repeated LocalServerMonitorData monitor_data_records = 7;
+	repeated LocalServerSmartMeter smart_meter_records = 8;
+	repeated LocalServerSmartMeterChannelConfig channel_config_records = 9;
+	repeated LocalServerSmartMeterLoadConfig load_config_records = 10;
+	repeated LocalServerSmartMeterLoadData load_data_records = 11;	
+	optional string status = 12;
+	optional string err_msg = 13;
+}

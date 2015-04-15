@@ -1,0 +1,31 @@
+option java_package = "edu.itu.proto";
+option java_outer_classname = "FrontServerSmartMeterLoadRecordProtos";
+
+message FrontServerSmartMeterLoadRecord {
+  optional int32 id = 1;  
+  optional int32 sm_id = 2;
+  optional int32 load_id = 3;
+  optional string sm_load_name = 4;
+  optional int32 voltage_value = 5;
+  optional float current_value = 6;
+  optional int32 theta_value = 7;
+  optional float power = 8;
+  optional float energy = 9;
+  optional int32 status = 10;
+  optional int64 local_timestamp = 11;
+  optional int64 timestamp = 12;
+}
+
+message FrontServerSmartMeterLightRecord {
+    optional int32 id = 1;
+    optional int32 sm_id = 2;
+    optional int32 light_id = 3;
+    optional int32 temp_value = 4;
+    optional int32 max_temp_value = 5;
+    optional int32 min_temp_value = 6;
+    optional int32 status = 7;
+    optional int64 local_timestamp = 8;
+    optional int64 timestamp = 9;
+}
+
+

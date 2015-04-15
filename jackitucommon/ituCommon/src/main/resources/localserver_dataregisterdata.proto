@@ -1,0 +1,12 @@
+package edu.itu;
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerDataRegisterDataProtos";
+
+message LocalServerDataRegisterData {
+	optional int32 data_register_data_id = 1;
+	optional int32 sm_id = 2;
+	optional bytes data_register_data_value = 3;
+	optional int64 timestamp = 4;
+	optional int32 processed = 5;
+}

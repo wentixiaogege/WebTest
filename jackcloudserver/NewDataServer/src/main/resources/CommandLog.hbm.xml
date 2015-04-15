@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.it.bean.Command.CommandLog" table="command_log" catalog="dataServer20150323">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="command" class="Command" fetch="select">
+            <column name="command_id" />
+        </many-to-one>
+        <property name="commandStream" type="string">
+            <column name="command_stream" length="100" />
+        </property>
+        <property name="commandResult" type="string">
+            <column name="command_result" length="200" />
+        </property>
+        <property name="commandData" type="string">
+            <column name="command_data" length="200" />
+        </property>
+        <property name="commandStatus" type="string">
+            <column name="command_status" length="45" />
+        </property>
+        <property name="generatedBy" type="string">
+            <column name="generated_by" length="45" />
+        </property>
+        <property name="generatedTime" type="timestamp">
+            <column name="generated_time" length="19" />
+        </property>
+        <property name="executedTime" type="timestamp">
+            <column name="executed_time" length="19" />
+        </property>
+        <property name="lsdbInsertedTime" type="string">
+            <column name="lsdb_inserted_time" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

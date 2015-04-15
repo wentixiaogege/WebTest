@@ -1,0 +1,24 @@
+# Eclipse
+.classpath
+bin/
+# .project
+
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Tomcat
+.tomcatplugin
+
+# google proto
+.proto~

@@ -1,0 +1,15 @@
+package edu.itu;
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerSmartMeterLoadDataProtos";
+
+message LocalServerSmartMeterLoadData {
+	optional int32 sm_load_data_id = 1;
+	optional int32 sm_load_config_id = 2;
+	optional float param_value1 = 3;
+	optional float param_value2 = 4;
+	optional float param_value3 = 5;
+	optional int64 timestamp = 6;
+	optional int32 processed = 7;
+	optional int32 load_status = 8;
+}

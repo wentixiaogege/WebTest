@@ -1,0 +1,12 @@
+package edu.itu;
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerLocalServerProtos";
+
+message LocalServerLocalServer {
+	optional int32 local_server_id = 1;
+	optional string local_server_name = 2;
+	optional int64 local_server_ieeeAddress = 3;
+	optional int32 validation = 4;
+	
+}

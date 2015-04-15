@@ -1,0 +1,13 @@
+package edu.itu;
+
+import "src/main/resources/cloudcommand.proto";
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "CloudCmdActionProtos";
+
+message CloudCmdAction {
+	repeated CloudCommand insert_cmds = 1;
+	repeated CloudCommand update_cmds = 2;
+	repeated CloudCommand delete_cmds = 3;
+	repeated CloudCommand search_cmds = 4;
+}

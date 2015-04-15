@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">355itu11</property>
+        <property name="hibernate.connection.url">jdbc:mysql://10.1.20.250:3306/dataServer20150323</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="LocalServer.hbm.xml" />
+        <mapping resource="SmartMeterLoadData.hbm.xml" />
+        <mapping resource="Command.hbm.xml" />
+        <mapping resource="CommandLog.hbm.xml" />
+        <mapping resource="DataRegisterData.hbm.xml" />
+        <mapping resource="SmartMeterChannelConfig.hbm.xml" />
+        <mapping resource="SmartMeterLightData.hbm.xml" />
+        <mapping resource="SmartMeter.hbm.xml" />
+        <mapping resource="SmartMeterLoadConfig.hbm.xml" />
+        <mapping resource="Coordinator.hbm.xml" />
+        <mapping resource="ParameterRegister.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,18 @@
+package edu.itu;
+
+option java_package = "edu.itu.proto";
+option java_outer_classname = "LocalServerSmartMeterChannelConfigProtos";
+
+message LocalServerSmartMeterChannelConfig {
+	optional int32 sm_channel_id = 1;
+	optional int32 sm_id = 2;
+	optional bytes sm_config_code = 3;
+	optional string channel_name0 = 4;
+	optional string channel_name1 = 5;
+	optional string channel_name2 = 6;
+	optional string channel_name3 = 7;
+	optional string channel_name4 = 8;
+	optional string channel_name5 = 9;
+	optional string channel_name6 = 10;
+	optional string channel_name7 = 11;
+}
