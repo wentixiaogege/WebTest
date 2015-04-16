@@ -35,7 +35,7 @@ public class JDBCCommandTableTest extends TestCase{
      * Rigourous Test :-)
      */
     public void testJDBCCommandTableADD()
-    {
+    {/*
 //    	Set set = new HashSet<Character>();
 //    	set.add('0');
     	Command cmd = new Command();
@@ -52,14 +52,14 @@ public class JDBCCommandTableTest extends TestCase{
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
     }
     public void testJDBCCommandTableUpdate()
     {
           
           JDBCCommandTableAccess dao = new JDBCCommandTableAccess();
           try {
-			Command cmd= dao.findById(100);
+			Command cmd= dao.findById(103);
 			cmd.setName("update");
 			dao.updateCommand(cmd);
 		} catch (Exception e) {
@@ -71,6 +71,16 @@ public class JDBCCommandTableTest extends TestCase{
     }
     public void testJDBCCommandTableDelete()
     {
+    	  JDBCCommandTableAccess dao = new JDBCCommandTableAccess();
+          try {
+//			Command cmd= dao.findById(101);
+        	Command cmd = new Command();
+        	cmd.setId(102);
+			dao.delete(cmd);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 	
     }
 }

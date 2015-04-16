@@ -282,6 +282,7 @@ public class JDBCBaseDAO<T> {
         while(rs.next()) {
             while(iter.hasNext()) {
                 Method method = iter.next();
+//                System.out.println(method.getParameterTypes()[0].getSimpleName());
                 if(method.getParameterTypes()[0].getSimpleName().indexOf("String") != -1) {
                     //由于list集合中,method对象取出的方法顺序与数据库字段顺序不一致(比如:list的第一个方法是setDate,而数据库按顺序取的是"123"值)
                     //所以数据库字段采用名字对应的方式取.
@@ -318,26 +319,21 @@ public class JDBCBaseDAO<T> {
         
         //过滤当前Pojo类所有带get字符串的Method对象,存入List容器
         for(int index = 0; index < methods.length; index++) {
-        	if (methodName.indexOf("set") != -1) {
-        		System.out.println("*******"+methods[index].getParameterTypes()[0].getSimpleName());
-            	//exclue the foreign key
-                if(     
-                     (methods[index].getName().indexOf(methodName) != -1)
-                		&&(!methods[index].getParameterTypes().toString().contains("Set"))) {
-                    list.add(methods[index]);
-                }
-			}
-        	if (methodName.indexOf("get") != -1) {
-            	System.out.println("------"+methods[index].getReturnType().getSimpleName());
-            	//exclue the foreign key
-                if(     
-                     (methods[index].getName().indexOf(methodName) != -1)
-                		&&(methods[index].getReturnType().getSimpleName().indexOf("Set")== -1)
-                		) {
-                    list.add(methods[index]);
-                }
-			}
+//        	System.out.println("111111111111111111"+methods[index].getName());
+        	if (methods[index].getName().indexOf(methodName) != -1) {
         	
+            	//exclue the foreign key
+        		if (methodName.contains("set") &&(!methods[index].getParameterTypes()[0].getSimpleName().contains("Set")) ) {
+//        			System.out.println(methodName+"*******"+methods[index].getParameterTypes()[0].getSimpleName());
+        			 list.add(methods[index]);
+				}
+        		
+                if( methodName.contains("get") &&(!methods[index].getReturnType().getSimpleName().contains("Set"))    
+                    ) {
+//                	System.out.println(methodName+"------"+methods[index].getReturnType().getSimpleName());
+                    list.add(methods[index]);
+                }
+			}
         }        
         return list;
     }
