@@ -24,7 +24,7 @@
             <key>
                 <column name="command_id" />
             </key>
-            <one-to-many class="com.it.bean.Command.CommandLog" />
+            <one-to-many class="com.it.bean.CommandLog" />
         </set>
     </class>
 </hibernate-mapping>

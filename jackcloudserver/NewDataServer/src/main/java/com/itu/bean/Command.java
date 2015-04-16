@@ -14,7 +14,7 @@ public class Command implements java.io.Serializable {
 	private Integer dataLength;
 	private String param1;
 	private String param2;
-	private Set commandLogs = new HashSet(0);
+	private Set commandLogs = new HashSet(0);// for foreign key
 
 	public Command() {
 	}

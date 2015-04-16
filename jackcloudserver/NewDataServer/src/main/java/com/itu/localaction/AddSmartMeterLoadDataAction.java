@@ -8,12 +8,12 @@ import javax.ws.rs.core.MediaType;
 import com.itu.dataserveraction.CommonProtoAction;
 import com.itu.locallogic.AddSmartMeterLoadDataLogic;
 
-import edu.itu.proto.LocalServerSmartMeterDataActionProtos.LocalServerSmartMeterDataAction;
+import edu.itu.proto.LocalServerSmartMeterActionProtos.LocalServerSmartMeterAction;
 import edu.itu.proto.ResultsProtos.Result;
 import edu.itu.util.Log4jUtil;
 
 @Path("/LocalServerAddSmartMeterData")
-public class AddSmartMeterLoadDataAction extends CommonProtoAction<LocalServerSmartMeterDataAction,Result>{
+public class AddSmartMeterLoadDataAction extends CommonProtoAction<LocalServerSmartMeterAction,Result>{
 	//Logger logger = Log4jUtil.getLogger(LocalServerAddAction.class);
 
 	

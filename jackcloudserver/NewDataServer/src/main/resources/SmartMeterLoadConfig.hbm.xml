@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="com.it.bean.Command.SmartMeterLoadConfig" table="smart_meter_load_config" catalog="dataServer20150323">
+    <class name="com.it.bean.SmartMeterLoadConfig" table="smart_meter_load_config" catalog="dataServer20150323">
         <id name="smLoadId" type="int">
             <column name="sm_load_id" />
             <generator class="assigned" />

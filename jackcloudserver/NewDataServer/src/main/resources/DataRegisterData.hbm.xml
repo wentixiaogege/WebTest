@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="com.it.bean.Command.DataRegisterData" table="data_register_data" catalog="dataServer20150323">
+    <class name="com.it.bean.DataRegisterData" table="data_register_data" catalog="dataServer20150323">
         <id name="dataRegisterRecordId" type="java.lang.Integer">
             <column name="data_register_record_id" />
             <generator class="identity" />

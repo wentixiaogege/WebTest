@@ -2,14 +2,14 @@ package com.itu.locallogic;
 
 import com.itu.dataserverlogic.CommonProtoLogic;
 
-import edu.itu.proto.LocalServerSmartMeterDataActionProtos.LocalServerSmartMeterDataAction;
+import edu.itu.proto.LocalServerSmartMeterActionProtos.LocalServerSmartMeterAction;
 import edu.itu.proto.ResultsProtos.Result;
 
 public class AddParameterRegisterLogic  extends
-CommonProtoLogic<LocalServerSmartMeterDataAction, Result>{
+CommonProtoLogic<LocalServerSmartMeterAction, Result>{
 
 	@Override
-	public Result executeAction(LocalServerSmartMeterDataAction t) {
+	public Result executeAction(LocalServerSmartMeterAction t) {
 		// TODO Auto-generated method stub
 		return null;
 	}

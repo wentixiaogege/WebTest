@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Mar 26, 2015 3:44:56 PM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="com.it.bean.Command.SmartMeterChannelConfig" table="smart_meter_channel_config" catalog="dataServer20150323">
+    <class name="com.it.bean.SmartMeterChannelConfig" table="smart_meter_channel_config" catalog="dataServer20150323">
         <id name="smChannelId" type="java.lang.Integer">
             <column name="sm_channel_id" />
             <generator class="identity" />
